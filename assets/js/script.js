@@ -4,4 +4,8 @@
 
 var startBtnEl = querySelctor("#btn");
 
-startBtnEl = addEventListener("click")
+var startQuiz = function() {
+    prompt()
+}
+
+startBtnEl = addEventListener("click" startQuiz);
