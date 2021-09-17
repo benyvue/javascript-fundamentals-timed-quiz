@@ -1,0 +1,27 @@
+body {
+    background-color: darkcyan;
+}
+
+#btn {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 10px solid;
+    border-radius: 40px;
+    background-color: skyblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    margin-top: 300px;
+}
+
+#btn:hover {
+    color: darkblue;
+    transition: color 0.25s;
+}
+
+.btn-placement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
