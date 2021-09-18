@@ -1,11 +1,37 @@
+//Press button to start quiz
+var startBtnEl = document.querySelector("#quiz-button")
+var pageContentEl = document.querySelector("#page-content");
 
 
-//Press button to prompt start quiz
+var startQuiz = function () {
+  if (startBtnEl) {
+    var questionOne = prompt("What is a function?");
+      if (questionOne === "localStorage.getItem") {
+        alert("Correct!");
+      } else if (questionOne === "" || questionOne != "localStorage.getItem") {
+        alert("Incorrect");
+        }
 
-var startBtnEl = querySelctor("#btn");
 
-var startQuiz = function() {
-    prompt()
+    var questionOne = prompt("What function is used in javascript for retrieving stored data?");
+      if (questionOne === "localStorage.getItem") {
+        alert("Correct!");
+      } else if (questionOne === "" || questionOne != "localStorage.getItem") {
+        alert("Incorrect");
+        }
+
+
+  }
+}; 
+
+
+function startTimer() {
+    document.querySelector("#quiz-button")
 }
 
-startBtnEl = addEventListener("click" startQuiz);
+
+
+// for edit and delete buttons
+
+
+startBtnEl.addEventListener("click", startQuiz);
