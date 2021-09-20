@@ -1,10 +1,20 @@
 //Press button to start quiz
-var startBtnEl = document.querySelector("#quiz-button")
-var timerElement = document.getElementById("timer");
+var startBtnEl = document.querySelector("#quiz-button");
+const startingMinutes = 2;
+let time = startingMinutes * 60;
 var record = "";
 
+setInterval(updateCountdown, 1000);
 
+function updateCountdown() {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
 
+    seconds = seconds < 2 ? '0' + seconds : seconds;
+
+    countdown.innerHTML = `${minutes}:${seconds}`;
+    time--;
+}
 
 var startQuiz = function () {
   if (startBtnEl) {
@@ -45,19 +55,6 @@ var startQuiz = function () {
 
   }
 }; 
-
-var saveTasks = function() {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  };
-
-function startTimer() {
-    document.querySelector("#quiz-button")
-}
-
-
-
-// for edit and delete buttons
-
 
 startBtnEl.addEventListener("click", startQuiz);
 
