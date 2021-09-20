@@ -8,19 +8,21 @@
     <title>Timed Quiz Start Page</title>
 </head>
 <body>
+  <p id="timer">Time: 0</p>
+  <a href="highscores.html">
+    <p class="scores">View High Score</p>
+  </a>
   <h1 class="title">
     Javascript Fundamentals Quiz
   </h1>
+  <div class="btn-placement">
+    <p class="paragraph">This is a timed quiz. You will have 1 minute and 30 seconds to complete a series of questions on the basics of javascript fundamentals.</p>
+  </div>
   <div>
-    <p>This is a timed quiz. You will have 1 minute and 30 seconds to complete a series of questions on the basics of javascript fundamentals.</br> 
-      For every question you get wrong, you will be deducted 10 seconds. Aim for the highest score.
-    <p id="good-luck">Good luck!</p>
-    </p>
+    <p class="paragraph">For every question you get wrong, you will be deducted 10 seconds. The quiz will end after the time is up. Aim for the highest score. Good luck!</p>
   </div>
   <div class="btn-placement">
-    <a href="quiz.html">
-      <button class="btn" id="btn">Click to Start Quiz</button>
-    </a>
+      <button class="btn" id="quiz-button">Click to Start Quiz</button>
   </div>
 
   <script src="assets/js/script.js"></script>

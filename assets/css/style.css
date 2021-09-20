@@ -12,7 +12,16 @@ body {
     text-decoration: underline;
 }
 
-#btn {
+.paragraph {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 10 rgba(0, 0, 0, 0.5);
+    font-size: 100%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#quiz-button {
     color: white;
     font-size: 100px;
     font-weight: bold;
@@ -22,10 +31,10 @@ body {
     background-color: skyblue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
-#btn:hover {
+#quiz-button:hover {
     color: darkblue;
     transition: color 0.25s;
 }
@@ -49,6 +58,25 @@ body {
     padding: 10px 20px;
 }
 
+#timer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: skyblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
 .scores:hover {
     color: darkblue;
+}
+
+.quiz-questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
